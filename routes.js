@@ -6,6 +6,8 @@ import Home from './components/Home';
 import About from './components/About';
 import Content from './components/Content';
 import BlogPosts from './components/BlogPosts';
+import Dogs from './components/Dogs';
+
 
 /* create a group of routes with nesting */
 let routes = (
@@ -16,6 +18,7 @@ let routes = (
             <Router.DefaultRoute name="all" handler={BlogPosts} />
             <Router.Route name="news-tag" path="tag/:tag" handler={BlogPosts} />
         </Router.Route>
+        <Router.Route name="dogs" handler={Dogs} />
     </Router.Route>
 );
 
